@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.main-head {
+  color: seagreen;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.news-item-container {
+  border: 2px solid rgb(255, 255, 255);
+  margin: 20px 0px;
+  border-radius: 25px;
+  background-color: #5d9368;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  text-align: left;
+}
+.news-item-container a {
+  text-decoration: none;
+}
+.news-item-container:hover {
+  transform: scale(1.01); 
+  transition: transform 0.5s ease-in-out; 
+}
+.image-container {
+  position: relative;
+}
+
+.thumbnail {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.image-container h2 {
+  background-color: #6b9576c9;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding-bottom: 10px;
+  border-radius: 15px 15px 0px 0px;
+  color: seashell;
+  font-size: 24px;
+  font-family: serif;
+}
+.image-container p {
+  position: absolute;
+  background-color: seagreen;
+  color: white;
+  padding: 10px;
+  top: -20px;
+  right: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-weight: 600;
+}
+.image-container span {
+  position: absolute;
+  background-color: seagreen;
+  color: white;
+  padding: 10px 10px;
+  top: 0px;
+  left: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 0px;
+  font-weight: 600;
+}
+
+.detail-container {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.desc {
+
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .image-container span {
+    position: absolute;
+    background-color: seagreen;
+    color: white;
+    padding: 5px 10px;
+    top: 0px;
+    left: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .image-container p {
+    position: absolute;
+    background-color: seagreen;
+    color: white;
+    padding: 8px;
+    top: 20px;
+    right: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.news-item-container:hover{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
