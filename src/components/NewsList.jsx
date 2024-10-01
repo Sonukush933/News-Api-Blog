@@ -18,12 +18,13 @@ const NewsList = ({ news, fetchFunction, totalResults, loading }) => {
           </p>
         }
       >
-        {news.map((data, index) => (
-          <>
-            {data.title && data.author && data.description && (
-              <NewsItem key={index} news={data} />
-            )}
-          </>
+        {news.map((data) => (
+          data.title && data.author && data.description && (
+            <NewsItem
+              key={data.url || data.publishedAt} // Use a unique key (url or publishedAt)
+              news={data}
+            />
+          )
         ))}
       </InfiniteScroll>
     </div>
