@@ -20,7 +20,8 @@ function App() {
   const fetchInitialArticles = async () => {
     try {
       const response = await axios.get(API_URL, {
-        params: { apikey: import.meta.env.VITE_API_KEY, country: "us", page: 1, pageSize: 20 }, // Use the API key from the .env file
+        params: { apikey: import.meta.env.VITE_REACT_APP_API_KEY
+          , country: "us", page: 1, pageSize: 20 }, // Use the API key from the .env file
       });
       setArticles(response.data.articles);
       setTotal(response.data.totalResults);
