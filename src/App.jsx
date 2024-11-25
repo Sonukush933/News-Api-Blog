@@ -19,6 +19,7 @@ function App() {
   // Fetch first 20 articles without delay
   const fetchInitialArticles = async () => {
     const apiKey = import.meta.env.VITE_REACT_APP_API_KEY; // Get the API key
+    console.log(apiKey);
 
     if (!apiKey) {
       console.error("API key is missing!");
