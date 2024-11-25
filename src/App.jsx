@@ -31,7 +31,8 @@ function App() {
         params: {
           apikey: apiKey,
           country: "us",
-  
+          page: 1,
+          pageSize: 20
         },
       });
 
